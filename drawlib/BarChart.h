@@ -2,7 +2,7 @@
 //  BarChart.h
 //  DrawLib
 //
-//  Created by wangxiaohu on 14-12-4.
+//  Created by wangxiaohu 王小虎 on 14-12-4.
 //  Copyright (c) 2014年 com.sofn.youhaog. All rights reserved.
 //
 

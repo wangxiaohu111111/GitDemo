@@ -1,0 +1,7 @@
+platform :ios,'8.0'
+pod "AFNetworking", "~> 2.0"
+pod "CocoaAsyncSocket"
+pod "MJRefresh"
+pod "EGOImageLoading"
+pod "MagicalRecord"
+pod "ffmpeg"

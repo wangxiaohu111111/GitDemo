@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoViewController">
+            <connections>
+                <outlet property="imageView" destination="xxf-H3-Vfa" id="Sdg-N4-w36"/>
+                <outlet property="label" destination="ugY-uR-ENn" id="SJ8-Vr-ONa"/>
+                <outlet property="playButton" destination="ZNF-nk-1om" id="VKQ-1K-wFq"/>
+                <outlet property="view" destination="USX-1O-8Xh" id="1tK-c1-EUY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="USX-1O-8Xh">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="帧" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ugY-uR-ENn">
+                    <rect key="frame" x="523" y="562" width="62" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="IjL-tk-P1M"/>
+                        <constraint firstAttribute="width" constant="62" id="jcT-45-Jqn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="xxf-H3-Vfa">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="554"/>
+                </imageView>
+                <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNF-nk-1om">
+                    <rect key="frame" x="15" y="562" width="31" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="31" id="69I-pv-Db9"/>
+                        <constraint firstAttribute="height" constant="30" id="u7t-1X-mv2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <state key="normal" title="播放">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="playButtonAction:" destination="-1" eventType="touchUpInside" id="ylI-4D-68n"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGN-DZ-diM">
+                    <rect key="frame" x="101" y="562" width="44" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="aLF-4f-anr"/>
+                        <constraint firstAttribute="width" constant="44" id="fiY-2g-Mcy"/>
+                    </constraints>
+                    <state key="normal" title="时间">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="showTime:" destination="-1" eventType="touchUpInside" id="1Hw-bk-LJJ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xxf-H3-Vfa" secondAttribute="trailing" id="9MT-zf-PO8"/>
+                <constraint firstItem="BGN-DZ-diM" firstAttribute="leading" secondItem="ZNF-nk-1om" secondAttribute="trailing" constant="55" id="CZ8-eO-GME"/>
+                <constraint firstItem="ZNF-nk-1om" firstAttribute="leading" secondItem="USX-1O-8Xh" secondAttribute="leading" constant="15" id="FMU-0M-Xye"/>
+                <constraint firstItem="xxf-H3-Vfa" firstAttribute="top" secondItem="USX-1O-8Xh" secondAttribute="top" id="Oeu-Qs-bT6"/>
+                <constraint firstItem="xxf-H3-Vfa" firstAttribute="leading" secondItem="USX-1O-8Xh" secondAttribute="leading" id="VYj-He-PDA"/>
+                <constraint firstItem="BGN-DZ-diM" firstAttribute="top" secondItem="xxf-H3-Vfa" secondAttribute="bottom" constant="8" id="XVi-VM-ePN"/>
+                <constraint firstAttribute="bottom" secondItem="ugY-uR-ENn" secondAttribute="bottom" constant="8" id="aL6-Md-LwC"/>
+                <constraint firstAttribute="bottom" secondItem="BGN-DZ-diM" secondAttribute="bottom" constant="8" id="di2-B7-9GC"/>
+                <constraint firstAttribute="trailing" secondItem="ugY-uR-ENn" secondAttribute="trailing" constant="15" id="lYe-nV-u2S"/>
+                <constraint firstAttribute="bottom" secondItem="ZNF-nk-1om" secondAttribute="bottom" constant="8" id="oV6-s8-38C"/>
+            </constraints>
+            <point key="canvasLocation" x="718" y="310"/>
+        </view>
+    </objects>
+</document>
